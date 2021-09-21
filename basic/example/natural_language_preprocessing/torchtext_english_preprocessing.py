@@ -4,6 +4,7 @@ from torchtext import data # torch.data 임포트
 def main():
 
     # 필트 정의
+
     # 텍스트
     TEXT = data.Field(sequential=True,
                       use_vocab=True,
@@ -27,7 +28,9 @@ def main():
     # is_target : 레이블 데이터 여부 (False가 기본값)
     # fix_length : 최대 허용 길이. 이 길이에 맞춰서 패딩 작업(Padding)이 진행된다.
 
-    # 주의할 점은 위 필드는
+    # 주의할 점은 위 필드는 어떻게 전처리를 진행할 것인지를 정의한 것이고,
+    # 실제 훈련 데이터에 대해서 전처리는 진행하지 않았습니다.
+    # 사실, 아직 훈련 데이터를 다운로드 받지도 않았습니다.
 
 if __name__ =='__main__':
     main()
